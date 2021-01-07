@@ -10,19 +10,21 @@ import Footer from './Footer'
 import history from '../history'
 import '../styles/index.css'
 
-export default () => {
+export const App = () => {
     return (
         <div className="wrapper">
-            <Header />
-            <content>
-                <Router history={history}>
-                    <Route path="/" exact component={AboutUsPage} />
-                    <Route path="/boats" exact component={BoatsPage} />
-                    <Route path="/rooms" exact component={RoomsPage} />
-                    <Route path="/services" exact component={ServicesPage} />
-                </Router>
-            </content>
-            <Footer />
+            <Router history={history}>
+                <React.Fragment>
+                    <Header />
+                    <content>
+                        <Route path="/" exact component={AboutUsPage} />
+                        <Route path="/boats" exact component={BoatsPage} />
+                        <Route path="/rooms" exact component={RoomsPage} />
+                        <Route path="/services" exact component={ServicesPage} />
+                    </content>
+                    <Footer />
+                </React.Fragment>
+            </Router>
         </div>
     );
 }

@@ -2,19 +2,20 @@
 
 html {
     height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/bg.jpg') center fixed;
+    background-size: cover;
 }
 
 .wrapper {
     display: grid;
     min-height: 100vh;
-    margin: 20% 15%;
-    grid-template-rows: 50px auto 50px;
+    margin: 0 15%;
+    grid-template-rows: calc(100vh - 48%) auto 50px;
     grid-template-columns: 100%;
     grid-template-areas: "h" "c" "f";
 }
 
 .wrapper > header {
-    background-color: greenyellow;
     grid-area: h;
 }
 

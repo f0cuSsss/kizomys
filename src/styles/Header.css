@@ -1,0 +1,66 @@
+header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas: "contacts" "title" "nav";
+}
+
+.information-block {
+    grid-area: contacts; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "geo contacts";
+    justify-items: center;
+    align-items: center;
+}
+
+.information-block > h4 {
+    text-align: center;
+}
+
+.information-block__geo-location {
+    grid-area: geo;
+}
+
+.information-block__contacts {
+    grid-area: contacts;
+}
+
+header > h1 {
+    grid-area: title;
+    font-weight: bold;
+    text-align: center;
+    font-size: 38px;
+    justify-self: center;
+    align-self: center;
+    letter-spacing: 5px;
+}
+
+.navigation-bar {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-weight: bold;
+    justify-items: center;
+    font-size: 22px;
+}
+
+.navigation-bar div > a {
+    text-decoration: none;
+    color: rgb(0, 31, 59);
+}
+
+.navigation-bar a div {
+    transition: 0.05s;
+}
+
+.navigation-bar a div:hover {
+    transform: scale(1.05);
+    transition: 0.05s;
+}
+
+.nav-item-active {
+    border-bottom: 3px solid rgb(4, 82, 4);
+}
+
