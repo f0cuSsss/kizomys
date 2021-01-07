@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; }
+
+html {
+    height: 100%;
+}
+
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    margin: 20% 15%;
+    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 100%;
+    grid-template-areas: "h" "c" "f";
+}
+
+.wrapper > header {
+    background-color: greenyellow;
+    grid-area: h;
+}
+
+.wrapper > content {
+    background-color: red;
+    grid-area: c;
+}
+
+.wrapper > footer {
+    background-color: yellow;
+    grid-area: f;
+}
+
