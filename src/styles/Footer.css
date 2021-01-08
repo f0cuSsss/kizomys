@@ -1,0 +1,12 @@
+.footer-content {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.footer-content span {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+}

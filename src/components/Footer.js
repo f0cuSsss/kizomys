@@ -5,7 +5,9 @@ import '../styles/Footer.css'
 const Footer = () => {
     return (
         <footer>
-            Footer
+            <div className="footer-content">
+                <span>Дельта днепра @2021</span>
+            </div>
         </footer>
     );
 }
