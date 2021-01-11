@@ -1,0 +1,33 @@
+.e-title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(107, 107, 107);
+    margin: 8px 15px;
+}
+
+.about-block {
+
+}
+
+.about__detail-text {
+    font-size: 18px;
+    color: #000;
+}
+
+.about__apartments-images {
+    padding: 10px;
+    text-align: center;
+}
+
+.about__apartments-images img {
+    margin: 5px;
+    max-width: 60vw;
+    height: 75vh;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.catches-block {
+    padding: 10px;
+}
