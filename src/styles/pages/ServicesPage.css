@@ -1,0 +1,30 @@
+.services-table {
+    margin: 20px 30px;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-collapse: collapse;
+    color: #686461;
+    width: 100%;
+}
+ 
+table th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    background-color: #C6D3D6;
+}
+
+table td {
+    font-size: 16px;
+    padding: 5px;
+}
+
+table tr:nth-child(odd) {
+    background: #e1e7e9;
+}
+
+table tr:nth-child(even) {
+    background: #C6D3D6;
+}
