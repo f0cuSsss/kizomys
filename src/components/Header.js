@@ -32,7 +32,7 @@ const Header = () => {
             <div className="navigation-bar">
                 <Item id="aboutus" title="О нас" to="/" activeId={activeId} onClick={onNavClick}/>
                 <Item id="services" title="Услуги" to="/services" activeId={activeId} onClick={onNavClick}/>
-                <Item id="boats" title="Лодки" to="/boats" activeId={activeId} onClick={onNavClick}/>
+                <Item id="boats" title="Инвентарь" to="/boats" activeId={activeId} onClick={onNavClick}/>
                 <Item id="rooms" title="Комнаты" to="/rooms" activeId={activeId} onClick={onNavClick}/>
             </div>
         </header>

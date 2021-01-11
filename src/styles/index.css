@@ -10,7 +10,7 @@ html {
     display: grid;
     min-height: 100vh;
     margin: 0 15%;
-    grid-template-rows: calc(100vh - 48%) auto 50px;
+    grid-template-rows: 53vh auto 110px;
     grid-template-columns: 100%;
     grid-template-areas: "h" "c" "f";
 }
@@ -20,12 +20,18 @@ html {
 }
 
 .wrapper > content {
-    background-color: red;
+    background-color: #c6d3d6;
+    border-radius: 8px;
     grid-area: c;
+    padding: 15px 20px;
 }
 
 .wrapper > footer {
-    background-color: yellow;
+    background-color: #4d5556;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     grid-area: f;
+    margin-top: 15px;
+    padding-top: 5px;
 }
 

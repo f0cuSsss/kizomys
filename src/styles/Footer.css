@@ -1,12 +1,30 @@
 .footer-content {
+    color: #fff;
     text-align: center;
     height: 100%;
     position: relative;
 }
 
-.footer-content span {
+.footer-copyright {
     position: absolute;
     bottom: 5px;
     right: 0;
     left: 0;
+}
+
+.socials-list__links {
+    align-items: center;
+}
+
+.social-item {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+.social-item:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.15);
 }
