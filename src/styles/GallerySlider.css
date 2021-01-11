@@ -1,0 +1,51 @@
+.gallery-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-slider img {
+    max-height: 65vh;
+    max-width: 70vw;
+    height: 550px;
+    border-radius: 4px;
+    margin: 0 3px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow-right {
+    background-image: url('../images/icons/right-arrow.svg') ;
+    width: 20px;
+    height: 20px;
+    right: 32px;
+}
+
+.arrow-left {
+    background-image: url('../images/icons/right-arrow.svg') ;
+    width: 20px;
+    height: 20px;
+    left: 32px;
+    transform: rotate(180deg);
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s easy;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.05)
+}
